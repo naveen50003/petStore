@@ -1,0 +1,272 @@
+            
+.petGridExtended {
+max-width: 1054px;
+margin:0 auto;
+background-color: white;
+padding-bottom: 25px;
+}
+.petGridExtended .threeSetDiv {
+width: 100%;
+float: left;
+}
+.petGridExtended .imgContainer {
+float: left;
+width: 27.5%;
+margin: 10px 10px 0 1.7em;
+
+}
+a img{
+border: none;
+}
+.petGridExtended .petGrid {
+
+margin-bottom: 10px;
+}
+.petGridExtended .breadCrumb{
+background-color: white;
+color: #136685;
+font-weight: bold;
+font-size: 0.8em;
+font-family: sans-serif;
+margin-left: 25px;
+padding-top: 10px;
+}
+.petGridExtended .breadCrumb a{
+display: inline-block;
+color: #136685;
+margin: 5px 0 10px 0;
+
+}
+
+.petGridExtended .breadCrumb div{
+float: right;
+margin-right: 2em;
+}
+.petGridExtended .breadCrumb button{
+margin: 0 0.1em 10px 1em;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+.petGridExtended .greenBtn{
+background: #319e23; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMxOWUyMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ2JSIgc3RvcC1jb2xvcj0iIzMxOWUyMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNTcwMTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #319e23 0%, #319e23 46%, #257016 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#319e23), color-stop(46%,#319e23), color-stop(100%,#257016)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #319e23 0%,#319e23 46%,#257016 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #319e23 0%,#319e23 46%,#257016 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #319e23 0%,#319e23 46%,#257016 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #319e23 0%,#319e23 46%,#257016 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#319e23', endColorstr='#257016',GradientType=0 ); /* IE6-8 */
+
+font-weight: bold;
+border: .1em solid #267317;
+color: white;
+margin:0 auto 10px;
+padding: 0.6em; 
+display: block;
+text-align: center;
+width:8em; 
+float: left;
+margin-right: 10px;
+}
+
+.petGridExtended .orangeBtn{
+background: #f28227; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyODIyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2YyODIyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZTc1MWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #f28227 0%, #f28227 51%, #de751f 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f28227), color-stop(51%,#f28227), color-stop(100%,#de751f)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f28227 0%,#f28227 51%,#de751f 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f28227 0%,#f28227 51%,#de751f 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f28227 0%,#f28227 51%,#de751f 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f28227 0%,#f28227 51%,#de751f 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f28227', endColorstr='#de751f',GradientType=0 ); /* IE6-8 */
+
+font-weight: bold;
+border: .1em solid #cf6e1f;
+color: white;
+margin: 0 auto 10px;
+padding: 0.6em;  
+text-align: center;
+width:8em;
+float: right;
+
+
+}
+
+.petGridExtended .gallery{
+
+border: 1px solid #dedede;
+width: 95%;
+margin: 0 auto;
+
+}
+.petGridExtended .petIntro {
+overflow: hidden;
+border: 1px solid #dedede;
+position: relative;
+}
+
+.petGridExtended .petIntro p {
+text-align: center;
+padding: 0.5em;
+word-break: break-all;
+background: url("../assets/TBG.png")repeat-x;
+}
+.petGridExtended .imgContainer img {
+width:10em;
+height:10em;
+display: block;
+margin:5px auto;
+}
+.petGridExtended .imgContainer p {
+text-align: center;
+padding: 0.1em;
+word-break: break-all;
+
+}
+.petGridExtended .maroonBtn{
+
+background: #6e2c37; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZlMmMzNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ZjFkMjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #6e2c37 0%, #4f1d25 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6e2c37), color-stop(100%,#4f1d25)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #6e2c37 0%,#4f1d25 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #6e2c37 0%,#4f1d25 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #6e2c37 0%,#4f1d25 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #6e2c37 0%,#4f1d25 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e2c37', endColorstr='#4f1d25',GradientType=0 ); /* IE6-8 */
+font-weight: bold;
+border: .1em solid #6e2d36;
+color: white;
+margin:0 auto 10px;
+padding: 0.6em; 
+display: block;
+text-align: center;
+width:8em;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+5        border-radius: 10px;
+
+}
+
+
+
+
+
+.petGridExtended .PetDescr {
+position: absolute;
+width: 100%;
+bottom: 0px;
+left: 0px;
+
+
+
+}
+.petGridExtended .PetDescr p{
+text-align: center;
+font-weight: bold;
+/*
+border-left: 1px solid #dedede;
+border-right: 1px solid #dedede;
+*/
+}
+
+
+.petGridExtended .price {
+margin:0px 0px;
+font-size: 0.9em;
+}
+
+
+.petGridExtended .price span{
+font-weight: bold;
+}
+.petGridExtended .actualPrice{
+text-decoration: line-through;
+}
+.petGridExtended .sellingPrice{
+font-size: 1.4em;
+color: #6e2c36;
+}
+.clear{
+clear: both;
+}
+                    @media (min-width: 0px)and (max-width:767px)
+                    {
+                    .petGridExtended .threeSetDiv {
+                            width: 100%;
+                            float: none;
+                        } 
+                    .petGridExtended .breadCrumb button{
+                    float: none;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
+                    } 
+                    .petGridExtended .imgContainer {
+                            float: none;
+                            width: 95%;
+                            box-sizing: border-box;
+                            margin: 0 auto;
+                            margin-top: 20px;
+
+
+                        }  
+                    .petGridExtended .imgBox {
+                            overflow: hidden;
+                            border: 1px solid #dedede;
+                            }
+                    .petGridExtended .imgContainer img {
+                            max-width:100%;
+
+                        }
+                    .petGridExtended .orangeBtn{
+                            float: none;
+                        }
+
+
+                    }
+
+
+@media (min-width: 768px) and (max-width:900px) 
+{               
+
+    .petGridExtended .imgContainer {
+    float:left;
+    box-sizing: border-box;
+    width: 29.5%;
+    margin: 20px 0 0 1.3em;
+
+    }
+    .petGridExtended .imgBox {
+    overflow: hidden;
+    border: 1px solid #dedede;
+    }
+    .petGridExtended .imgContainer img {
+    max-width:100%;
+
+}
+
+}
+
+
+@media (min-width: 901px)
+{
+
+
+    .petGridExtended .imgContainer img {
+       max-width:100%;
+
+    }
+
+
+
+}
+
+
+
+

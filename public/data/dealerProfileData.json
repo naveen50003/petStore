@@ -1,0 +1,45 @@
+response={
+		"message" : "Success",	
+		"viewProfile_dealers": [
+			{
+				 "dealerName": "kiran",
+			     "gender": female,
+			     "phone": 5866256886,
+			     "address": "Necklace raod",
+                 "PanCard":"fgt4s6",
+                 "City":"Hyderabad",
+                 "State":"Telegana",
+             },
+			{
+				"dealerName": "Lasya",
+			    "gender": female,
+		        "phone": 559631685,
+			    "address": "L B Nagar",
+                "PanCard":"APTP4536g",
+                "City":"Hyderabad",
+                "State":"Telegana",
+			},
+            {
+				"name": "Mahesh",
+			    "gender": male,
+                "phone": 9979985633,
+			    "address": "Banjara Hills",
+                "PanCard":"kts453g",
+                "City":"Hyderabad",
+                "State":"Telegana",
+            },
+			{
+				"name": "Harini",
+			    "gender": female,
+			    "phone": 54232236888,
+			    "address": "Jubli Hills",
+                "PanCard":"Aps453g",
+                "City":"Hyderabad",
+                "State":"Telegana"
+			}
+		
+		]
+	
+	
+	}
+	

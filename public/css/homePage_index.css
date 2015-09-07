@@ -1,0 +1,220 @@
+/*reset css*/
+html,body,header,section,div,span,ul,li,img,a,footer,nav,h1,h2{
+	margin:0;
+	padding:0;
+}
+body
+{
+	font:normal 100% Arial;
+	font-family: 'Segoe UI';
+    zoom:100%;
+}
+:focus {
+    border:1px solid red;
+}
+img { 
+	max-width: 100%; 
+	height: auto; 
+	width: auto\9; /* ie8 */ 
+}
+
+a,a:hover{
+	text-decoration: none;
+    color:#fff;
+}
+a:focus {
+    text-decoration: underline;
+}
+ul,ol{
+	list-style: none;
+}
+h2{
+	color:#044c66;
+	font-size:1.2em;
+}
+/*structural css*/
+#wrapper{
+	background-color: #e6e9eb;
+}
+header{
+    padding:10px 15px;
+    text-align: center;
+    background-color: #6e2d36;
+    position:relative;
+	overflow:hidden;
+}
+section{
+    background-color: #fff;
+    padding:10px;
+}
+footer{
+    background-color: #394042;
+    color:#fff;
+    padding:10px;
+    overflow: hidden;
+}
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+/*header css*/
+#tablogo{
+    display:none;
+}
+#search{
+    position:absolute;
+    left:-999px;
+}
+#menu{
+    display:inline;
+    width:100%;
+}
+#menu-toggle
+{  
+	float:left;
+	cursor:pointer;
+	width:20px;
+	padding:10px;
+}
+#logo {
+    display:inline-block;
+	width:30px;
+}
+#menu ul
+{
+	display:none;
+   
+	overflow:hidden;
+}
+#menu ul li a,#logo{
+	color:#fff;
+}
+#menu li{
+	padding:5px  5px 5px 15px;
+	border-bottom:1px solid #fff;
+}
+#menu ul li:last-child{
+	border-bottom:none;
+}
+.menu-open #menu    {
+     width:100%;
+}
+.menu-open #menu  ul
+{
+	display: block;
+    background-color: #6e2d36;
+    position: absolute;
+    z-index: 2;
+}
+.slideAnimateBegin ul
+{
+    position:absolute;
+    left:-200px;
+}
+.slideAnimateClose ul
+{
+    position:absolute;
+/*    left:-200px;*/
+}
+#searchIcons{
+    float:right;
+    display: inline;
+    overflow: hidden;
+    padding: 8px 0;
+}
+#searchIcons input[type="text"]{
+    width:150px;
+    height:23px;
+    border:1px solid #dbdbdb;
+    padding-left:10px;
+}
+#searchIcons a {
+	display: block;
+	width: 20px;
+	padding: 3px 0 0 5px;
+	float: right;
+}
+#searchAndLogin{
+    display:none;
+}
+/*homePageBanner css*/
+#homePageBanner{
+    position:relative;
+	margin:0 auto;	
+    margin-bottom: 10px;
+    z-index: 1;
+	max-width:985px;
+}
+.homePageBannerImg{
+    d1isplay:block;
+}
+#leftArrows{
+    position: absolute;
+    left:-999px;
+    overflow: hidden;
+}
+#rightArrows{
+    position: absolute;
+    right:-999px;
+}
+/*content css*/
+#importantItem{
+    text-align: center;
+	overflow:hidden;
+}
+.importantItemCol{
+    border:1px solid #d4d4d4;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+.importantItemCol #price{
+    color: #6e2d36;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+/*footer css*/
+.footerRow{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.summaryLinks{
+    width:24.5%;
+    float:left;
+    border-right:1px solid #fff;
+}
+.summaryLinks:last-child{
+     border-right:none;
+}
+.summaryLinks h2{
+    text-align: center;
+    padding: 3px;
+    font-size: 0.5em;
+    color:#fff;
+}
+.summaryLinks ul li{
+    display:none;
+}
+.footerMain{
+    display: none;
+}

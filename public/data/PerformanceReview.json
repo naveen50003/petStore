@@ -1,0 +1,29 @@
+{
+    "message":"Success",
+    "Performance": [
+			{
+				"dealerName": "Charitha",
+				"TotalPets" : "8",
+				"PetsSold" : "4",
+				"RemainingPets" : "4"
+            },
+			{
+				"dealerName": "Manasa",
+				"TotalPets" : "8",
+				"PetsSold" : "4",
+				"RemainingPets" : "4"
+            },
+			{
+				"dealerName": "Ashritha",
+				"TotalPets" : "18",
+				"PetsSold" : "4",
+				"RemainingPets" : "14"
+            },
+			{
+				"dealerName": "Navneeth",
+				"TotalPets" : "8",
+				"PetsSold" : "1",
+				"RemainingPets" : "4"
+            }
+]
+}

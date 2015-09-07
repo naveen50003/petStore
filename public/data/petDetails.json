@@ -1,0 +1,116 @@
+{	"status" : "success",
+    "products": [
+        {
+            "productType": "Dog",
+            "productId":  1,
+            "productName": "Bull Fighter",
+            "productPrice": 10000,
+            "pageNumber": 1,
+            "productImage": "images/bull1.jpg"
+        },
+        {
+            "productType": "Cat",
+            "productId": 2,
+            "productName": "Pug",
+            "productPrice": 10000,
+            "pageNumber": 2,
+            "productImage": "images/bull2.jpg"
+        },
+        {
+            "productType": "Bird",
+            "productId": 3,
+            "productName": "Labrador Retriever",
+            "productPrice": 10000,
+            "pageNumber": 2,
+            "productImage": "images/bull3.jpg"
+        },
+        {
+            "productType": "Fish",
+            "productId": 4,
+            "productName": "Boxer",
+            "productPrice": 10000,
+            "pageNumber": 2,
+            "productImage": "images/bull4.jpg"
+        },
+        {
+            "productType": "Fish",
+            "productId": 5,
+            "productName": "Beagle",
+            "productPrice": 10000,
+            "pageNumber": 2,
+            "productImage": "images/bull4.jpg"
+        },
+        {
+            "productType": "Fish",
+            "productId": 6,
+            "productName": "Bull Fighter",
+            "productPrice": 10000,
+            "pageNumber": 2,
+            "productImage": "images/bull4.jpg"
+        },
+        {
+            "productType": "Fish",
+            "productId": 7,
+            "productName": "German Sherpherd",
+            "productPrice": 10000,
+            "pageNumber": 2,
+            "productImage": "images/bull4.jpg"
+        },
+        {
+            "productType": "Fish",
+            "productId": 8,
+            "productName": "poodle",
+            "productPrice": 10000,
+            "pageNumber": 2,
+            "productImage": "images/bull4.jpg"
+        },
+        {
+            "productType": "Fish",
+            "productId": 9,
+            "productName": "English Mustiff",
+            "productPrice": 10000,
+            "pageNumber": 2,
+            "productImage": "images/bull4.jpg"
+        },
+        {
+            "productType": "Fish",
+            "productId": 10,
+            "productName": "English Mustiff",
+            "productPrice": 10000,
+            "pageNumber": 2,
+            "productImage": "images/bull4.jpg"
+        },
+        {
+            "productType": "Fish",
+            "productId": 11,
+            "productName": "English Mustiff",
+            "productPrice": 10000,
+            "pageNumber": 2,
+            "productImage": "images/bull4.jpg"
+        },
+        {
+            "productType": "Fish",
+            "productId": 12,
+            "productName": "English Mustiff",
+            "productPrice": 10000,
+            "pageNumber": 2,
+            "productImage": "images/bull4.jpg"
+        },
+        {
+            "productType": "Fish",
+            "productId": 13,
+            "productName": "English Mustiff",
+            "productPrice": 10000,
+            "pageNumber": 2,
+            "productImage": "images/bull4.jpg"
+        },
+        {
+            "productType": "Fish",
+            "productId": 14,
+            "productName": "English Mustiff",
+            "productPrice": 10000,
+            "pageNumber": 2,
+            "productImage": "images/bull4.jpg"
+        }
+    ]
+}

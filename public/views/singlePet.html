@@ -1,0 +1,42 @@
+<div class="petInnerWrapper" ng-controller="particularPetDetailsCtrl">
+    <div class="breadCrumb"><a href="javascript:void(0)">Dogs</a> &gt; <a href="javascript:void(0)">BullDog</a> &gt; <a href="javascript:void(0)">Bull Fighter 9</a>
+    </div>
+    <div class="clear"></div>
+    <div class="AboutPet">
+        <div class="petPhotoLarge">
+            <img src={{allPetsDetails[0].productImage}} alt="BullFighter" >
+        </div>
+        <div class="shopSectionWrap">
+            <p class="petName">{{allPetsDetails[0].productName}} </p>
+           
+            <div class="subShopping">
+                <a href="javascript:void(0)"><span class="review"> Write a <span>REVIEW</span></span></a>
+            </div>
+    
+            <div class="moreDetails">
+                <p class="petColor">Color: <span>{{particularPetDetails.color}}</span></p>
+                <p class="petAge">Age: <span>{{particularPetDetails.age}}</span></p>
+                <p class="petGender">Gender: <span>{{particularPetDetails.gender}}</span></p>
+                <p class="petLocation">Location: <span>{{particularPetDetails.availLocation}}</span></p>
+
+            </div>
+
+            <div class="petAvailabilityLoc">
+                <span>Check availability</span>
+                <input type="text" maxlength="6" placeholder=" Enter PINCODE" class="pincodeInput" /> 
+                <button class="orangeBtn">CHECK</button>
+                
+
+            </div>
+            <div style="margin-bottom:10px;">
+                <p class="pricesPara">Rs: <span class="sellingPrice">{{allPetsDetails[0].productPrice}}</span><span class="sellingPrice">/-</span>&nbsp;
+                <span class="spFont"> selling price</span></p>
+            </div>
+            <div style="overflow:hidden;" >
+                <input type="button" value="Bid Now" ui-sref="bidding" class="greenBtn bidButton"/>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>

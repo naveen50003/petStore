@@ -1,0 +1,22 @@
+	<div class="petGridWrapper" ng-controller='allPetDetailsCtrl'>
+        <div class="breadCrumb"><a href="javascript:void(0)">Dogs</a> &gt; <a href="javascript:void(0)" class="active">bulldog</a></div>
+        <div class="gallery">
+        <div class="imgBox"  >            
+            <div class="petGrid" ng-repeat="product in allPetsDetails | limitTo : productLimit()">
+                
+                <div class="imgContainer">
+						<div class="petIntro">
+							<a ui-sref="singlePet({id:product.productId})"><img src="{{product.productImage}}" alt="{{product.productName}}" /></a> 
+						
+							<div class="PetDescr">
+							   <p>{{product.productName}}</p>
+							</div>
+						</div>
+						<p class="price">Rs:<span class="sellingPrice">{{product.productPrice}}</span><span class="sellingPrice">/-</span>  Selling Price</p>
+					</div>
+            </div>
+        </div>
+            <button class="maroonBtn" ng-show="hasMoreProductsToView()" ng-click="viewMoreProducts()">View More</button>
+        </div>
+</div>
+            

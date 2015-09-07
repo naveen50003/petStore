@@ -1,0 +1,166 @@
+textarea,div,table,tr,td,a,ul,li,input,label,nav{
+margin: 0;
+padding: 0;
+}
+#DealerWrapper .LeftNav {
+    margin-top:50px;
+}
+.gridContainer	{
+ padding:10px;
+}
+.gridContainer h1{
+text-align:center;
+color:#044A65;
+margin-bottom: 20px;
+text-decoration: underline;
+text-decoration-color: aquamarine;
+}
+.dates{
+    overflow: auto;
+}
+.dates label {
+    float:left;
+}
+
+@media (min-width:275px) and (max-width:767px) {
+.dates {
+    margin-bottom:5px;
+    margin-left:20px;
+}
+.dates input[type="date"] {
+    display:block;
+    margin-bottom:5px;
+    height:50%;
+    font-size:1em;
+}
+.GridView {
+    border-collapse: collapse;   
+}
+.GridView tr,td,th {
+    border: 1px solid black;
+     padding: 5px;
+    width:10%;
+    text-align:center;
+}
+.GridView th {
+    background-color:#044A65 ;
+    color:#fff;
+    }
+.opeartions {
+    margin-top:5px;
+}
+.operations a {
+    color:#fff;
+    text-decoration:underline;
+    padding:3px;
+    margin-top:3px;
+    border-radius:4px;
+    background-color:#044A65;
+    margin-right:7px;
+    display:inline-block;
+}
+.PurpleButton {
+    margin-top:15px;   
+    text-align:center;
+}
+.comment {
+    height:40px;
+    font-size:0.9em;
+    overflow:auto;
+}
+.hide {
+ display:none;   
+}
+.PurpleButton input[type="button"] {
+    background-color:#044A65;
+    color:#fff;
+    padding:15px;
+    border:none;
+}
+.GridView tr:nth-child(odd) {
+    background-color: #E6EDF0;
+}
+.GridView tr:nth-child(even) {
+      background-color:#CDDBE0;
+}
+}
+
+/*styles for dashboard view
+Desktop and tablet
+*/
+@media  (min-width:768px) {
+.dates label {
+    display:inline-block;
+    padding:10px;
+}
+.dates {
+    margin-bottom:5px;
+    margin-left:20px;
+}
+.dates input[type="date"] {
+    height:50%;
+   
+    font-size:1em;
+}
+.GridView {
+ border-collapse: collapse;   
+}
+.GridView tr,td,th {
+    border: 1px solid black;
+     padding: 5px;
+    width:10%;
+    text-align:center;
+}
+.GridView th {
+    background-color:#044A65 ;
+    color:#fff;
+    }
+.opeartions {
+  margin-top:5px;   
+}
+.operations a {
+    color:#fff;
+    1text-decoration:underline;
+    padding:3px;
+    border-radius:4px;
+    background-color:#044A65;
+    margin-right:7px;
+    display:inline-block;
+}
+.PurpleButton {
+    margin-top:15px;   
+    float:right;
+}
+.comment {
+    height:40px;
+    overflow:auto;
+    font-size:0.9em;
+}
+.PurpleButton input[type="button"] {
+    background-color:#044A65;
+    color:#fff;
+    padding:10px;
+    border:none;
+}
+.GridView tr:nth-child(odd) {
+    background-color: #E6EDF0;
+}
+.GridView tr:nth-child(even) {
+      background-color:#CDDBE0;
+}
+.PerformanceReview {
+   // float:right;
+}
+.PerformanceReview label {
+    padding:8px;
+}
+     .hide1 {
+        display:none;   
+    }
+    
+}
+
+@media (min-width:768px){
+   
+}
+

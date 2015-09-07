@@ -1,0 +1,117 @@
+/*tablet css*/
+@media (min-width:768px){
+/*header css*/
+    header{
+        background-color:#fff;
+        text-align: none;
+    }
+    #mlogo{
+        display:none;
+    }
+    #tablogo{
+        display: block;
+    }
+    .menu-open #menu    {
+        display:block;
+        height:64px;
+    }
+    .menu-open #menu ul,.slideAnimateClose ul {
+        position:static;
+    }
+    #menu-toggle{
+	display: none;
+	}
+	#logo {
+		display:inline-block;
+		float:left;
+		padding:20px 0;
+		width:auto;
+	}
+	#menu{
+        background-color: #6e2c36;
+		overflow:hidden;
+        display: block;
+         width:100%;
+	}
+	#menu ul
+	{
+		display:block;
+        overflow:hidden;
+        width:auto;
+	}
+	#menu li
+	{
+		float:left;
+		padding:0;
+		border-bottom:none;
+	}
+	#menu li a
+	{
+		display:inline-block;
+		padding:20px;
+	}
+	#menu li a:hover{
+		background-color:#8c414d;
+	}
+    #searchIcons{
+        display:none;
+    }
+    #searchAndLogin{
+        display: block;
+        float:right;
+        overflow: hidden;
+		margin-top: 10px;
+    }
+    #searchAndLogin input[type="text"]{
+        width:290px;
+        height:25px;
+        border:1px solid #dbdbdb;
+        padding-left:10px;
+    }
+    #login ul li{
+        float:left;
+        margin:5px 0;
+		padding:0 5px;
+    }
+	#login ul li:first-child{
+		border-right: 1px solid #6e2d36;
+	}
+    #login{
+        overflow: hidden;
+    }
+    #login ul li a{
+        color: #6e2d36;
+    }
+    /*homePageBanner css*/
+    #homePageBanner{
+        background-color: #fff;
+    }
+    /*content*/
+    #importantItem{
+        overflow: hidden;
+    }
+    .importantItemCol{
+        width:30.390625%;
+        float:left;
+        border:none;
+        border-right:1px solid #044a63;
+    }
+   .importantItemCol:last-child{
+        border-right: none;
+   } 
+    /*contentRow close*/
+    /*footer*/
+    .summaryLinks ul li,.summaryLinks h2{
+        display:block;
+        text-align: center;
+        font-size: 0.7em;
+    }
+    .footerMain{
+        font-size: 0.7em;
+        display: block;
+        text-align: center;
+    }
+    
+}
+.container-toggleMenu {
+

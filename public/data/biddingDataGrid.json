@@ -1,0 +1,56 @@
+{
+          "status" : "success",
+		"biddingDataGrid_dealers":[
+    {
+        "petType": "Dog(Pug)",
+        "highestBiddingRate": "Rs.10000/-",
+        "sellingDetails":"sold out"
+    },
+    {
+        "petType": "Cat(Persian)",
+        "highestBiddingRate": "Rs.52458/-",
+        "sellingDetails":"not sold"
+    },
+    {
+        "petType": "Fish(Livebearers)",
+        "highestBiddingRate": "Rs.78536/-",
+        "sellingDetails":"not sold"
+    },
+    {
+        "petType": "Parrot(Australian ringneck)",
+        "highestBiddingRate": "Rs.45452/-",
+        "sellingDetails":"sold out"
+    },
+    {
+        "petType": "Dog(Bullfighter)",
+        "highestBiddingRate": "Rs.15558/-",
+        "sellingDetails":"sold out"
+    },
+    {
+        "petType": "Fish(Dolphin)",
+        "highestBiddingRate": "Rs.21358/-",
+        "sellingDetails":"sold out"
+    },
+    {
+        "petType": "Fish(Dolphin)",
+        "highestBiddingRate": "Rs.21358/-",
+        "sellingDetails":"sold out"
+    },
+    {
+        "petType": "Fish(Dolphin)",
+        "highestBiddingRate": "Rs.21358/-",
+        "sellingDetails":"sold out"
+    },
+    {
+        "petType": "Fish(Dolphin)",
+        "highestBiddingRate": "Rs.21358/-",
+        "sellingDetails":"sold out"
+    },
+    {
+        "petType": "Fish(Dolphin)",
+        "highestBiddingRate": "Rs.21358/-",
+        "sellingDetails":"sold out"
+    }
+  ]
+}
+	

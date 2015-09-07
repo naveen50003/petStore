@@ -1,0 +1,15 @@
+ {
+     "status" : "success",
+		"ProfileData_dealers":[ 
+            {
+			"name": "Manasa",
+			"gender":"female",
+			"phone": 9979985633,
+			"address": "Vanasthalipuram",
+            "PanCard":"Zts453g",
+            "City":"Hyderabad",
+            "State":"Telegana"
+		}
+    ]
+	}
+

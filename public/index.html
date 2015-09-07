@@ -1,0 +1,340 @@
+<!doctype html>
+<html ng-app="petApp" lang="en">
+	<head>
+		<title>Pet Store-{{$state.current.data.title}}</title>
+        
+        <!--Meta Tags-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,max-scale=1.0,userscalable=no"/>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="Simple Responsive Template is a template for responsive web design. Mobile first, responsive grid layout,toggle menu, navigation bar with unlimited drop downs, responsive slideshow">
+		<meta name="keywords" content="">
+        
+        <!--CSS-->
+        
+        <link rel="stylesheet" type="text/css" href="css/homePage_index.css"/>
+        <link rel="stylesheet" type="text/css" href="css/homePage_tablet.css"/>
+        <link rel="stylesheet" type="text/css" href="css/homePage_desktop.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bidstyle.css"/>
+        <link rel="stylesheet" type="text/css" href="css/DealerDashboardStyles.css"/>
+        <link rel="stylesheet" type="text/css" href="css/GridView.css"/>
+        <link rel="stylesheet" type="text/css" href="css/loginPage.css"/>
+        <link rel="stylesheet" type="text/css" href="css/ManageDealers.css"/>
+        <link rel="stylesheet" type="text/css" href="css/petDescription.css"/>
+        <link rel="stylesheet" type="text/css" href="css/petGrid.css"/>
+        <link rel="stylesheet" type="text/css" href="css/petGridExtended.css"/>
+        <link rel="stylesheet" type="text/css" href="css/ui-grid-unstable.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/gridcss.css">
+        <!--END-->
+        
+		<!--Lib FILES-->
+		
+        <script src="libs/jquery-1.9.0.min.js"></script>
+        <script src="libs/angular.js"></script>
+        <script src="libs/angular-ui-router.js"></script>
+        <script src="libs/ui-grid-unstable.js"></script>
+        <script src="libs/ngStorage.js"></script> 
+        
+        <!--END-->
+        
+        <!--JS FILES-->
+        
+		<script src="js/app.js"></script>
+        <script src="js/appRoute.js"></script>
+<!--        <script src="js/service/interceptors.js"></script>-->
+        <script src="js/controller/LoginCtrl.js"></script>
+        <script src="js/service/loginService.js"></script>
+        <script src="js/service/petService.js"></script>
+        <script src="js/controller/petCtrl.js"></script>
+        <!---<script src="js/service/loginService.js"></script>--->
+        <script src="js/service/dealerService.js"></script>
+        <script src="js/controller/dealerCtrl.js"></script>
+        <script src="js/service/adminService.js"></script>
+        <script src="js/controller/adminCtrl.js"></script>
+        <script src="js/JQuery/formJquery.js"></script>
+        <script src="js/JQuery/animateJquery.js"></script>
+       
+        
+        
+   
+        <!--END-->
+        
+        
+        <!--HTML CODE BEGIN -->
+	</head>
+	<body ng-controller="loginController">
+		<!--wrapper-->
+		<div id="wrapper">
+			<!--header-->
+			<header>
+                <div class="container" >
+                    <div id="menu-toggle">
+                         <img src="images/Menu.png" alt="" role="button"/>
+				    </div>
+                    <div id="logo">
+                        <h1 id="mlogo"><a ui-sref="homePageBanner"><img src="images/mobileLogo.png" alt="logo"/></a></h1>
+                        <h1 id="tablogo"><a ui-sref="homePageBanner"><img src="images/Logo.png" alt="logo"/></a></h1>
+                    </div>
+                    <div id="searchIcons">
+                        <label for="search">Search</label>
+						<input type="text" placeholder="search" name="Enter search text" id="search"/>
+                        <a href="javascript:void(0)" role="button"><img src="images/searchm.png" alt="search icon"/></a>
+                    </div>
+                    <div id="searchAndLogin">
+                        <input type="text" placeholder="search" name="Enter search text"/>
+                        <a href="javascript:void(0)"><img src="images/Search.png" alt="Search" /></a>
+                        <div id="login">
+                            <ul>
+                                <div ng-if="!option">
+                                    <li><a href="javascript:void(0)" ng-click="signUpShow()">Sign Up</a></li>
+                                    <li><a href="javascript:void(0)" ng-click="loginShow()">Login</a></li>
+                                    <li class="clear"></li>
+                                </div>
+                                <div ng-if="option">
+                                    <li ng-if="typeOfUser==='dealer'"><a ui-sref="userPage.viewProfile">{{currentUser}}</a></li>
+                                    <li ng-if="typeOfUser==='admin'"><a ui-sref="adminPage">{{currentUser}}</a></li>
+                                    <li ng-if="typeOfUser==='normaluser'"><a ui-sref="petGrid">{{currentUser}}</a></li>
+                                   
+                                    
+                                    <li><a href="javascript:void(0)" ng-click="logout()">Log Out</a></li>
+                                    <li class="clear"></li>
+                                    
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+			</header><!--header close-->
+            <!--navigation Links-->
+            <nav id="menu">
+                <div class="container">
+				    <ul>
+                        <div id='pic'>
+                            <li ui-sref="userPage.viewProfile"><image src='images/ProfilePicture.gif' alt='Profile Pic'/></li>
+                        </div>
+                        <div ng-if="option">
+                            <li class='dealerNav' ng-if="typeOfUser==='dealer'"><a ui-sref="userPage.viewProfile">{{currentUser}}</a></li>
+                            <li class='dealerNav' ng-if="typeOfUser==='admin'"><a ui-sref="adminPage">{{currentUser}}</a></li>
+                            <li class='dealerNav' ng-if="typeOfUser==='normaluser'"><a ui-sref="javascript:void(0)">{{currentUser}}</a></li>
+                        </div>
+                        <li><a ui-sref="homePageBanner">Home</a></li>
+                        <li><a ui-sref="#">About US</a></li>
+                        <li><a ui-sref="petGrid">Animals</a></li>
+                        <li><a href="javascript:void(0)">Birds</a></li>
+                        <li><a href="javascript:void(0)">Fishes</a></li>
+                        <div ng-if="!option">
+                            <li><a href="javascript:void(0)" class='hide1' ng-click="loginShow()">Login</a></li>
+                            <li><a href="javascript:void(0)" class='hide1' ng-click="signUpShow()">SignUp</a></li>
+                        </div>
+                        <div ng-if="typeOfUser==='dealer'">
+                            <li class='dealerNav logout'><a ng-click="logout()">Log out</a></li>
+                            <li class='dealerNav'><a ui-sref="userPage.viewProfile">View Profile</a></li>
+                            <li class='dealerNav'><a ui-sref="userPage.dealerQueryGrid">Query Grid</a></li>
+                            <li class='dealerNav'><a ui-sref="userPage.biddingGrid">View Bidding Grid</a></li>
+                            <li class='dealerNav'><a ui-sref="userPage.viewPet">Pets in my Store</a></li>
+                        </div>
+                        <div ng-if="typeOfUser==='admin'">
+                            <li class='dealerNav logout'><a ng-click="logout()">Log out</a></li>
+                            <li class='dealerNav'><a ui-sref="adminPage.managePet">Manage Pets</a></li>
+                            <li class='dealerNav'><a ui-sref="adminPage.manageDealer">Manage Dealers</a></li>
+                            <li class='dealerNav'><a ui-sref="adminPage.performanceReview">Performance Review</a></li>
+                            <li class='dealerNav'><a ui-sref="adminPage.allotTime">Alot Bidding Time</a></li>
+                        </div>
+					</ul>
+                </div>
+            </nav><!--navigation Links close-->
+            <div class="clear"></div>
+            
+            
+            <!--view starts-->
+              <div ui-view></div>
+            <!--view ends-->
+            
+   
+           <!--footer-->
+            <footer class="container">
+                <div class="footerRow">
+                    <div class="summaryLinks">
+                        <h2><a href="javascript:void(0)">ABOUT PETPICK</a></h2>
+                        <ul>
+                            <li><a href="javascript:void(0)">About Us</a></li>
+                            <li><a href="javascript:void(0)">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="summaryLinks">
+                        <h2><a href="javascript:void(0)">CORPARATE</a></h2>
+                        <ul>
+                            <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                            <li><a href="javascript:void(0)">Terms and Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="summaryLinks">
+                        <h2><a href="javascript:void(0)">CONTACT US</a></h2>
+                        <ul>
+                            <li>Mail us:<a href="javascript:void(0)">Petpick@gmail.com</a></li>
+                            <li>Call Us:0123456789</li>
+                        </ul>
+                    </div>
+                    <div class="summaryLinks">
+                        <h2><a href="javascript:void(0)">FOLLOW US</a></h2>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)"><img src="images/FB.png"/></a>
+                                <a href="javascript:void(0)"><img src="images/G.png"/></a>
+                                <a href="javascript:void(0)"><img src="images/P.png"/></a>
+                                <a href="javascript:void(0)"><img src="images/T.png"/></a>
+                                <a href="javascript:void(0)"><img src="images/B.png"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerMain">
+                    Copyright &copy; 2015 
+                    <span>|</span>
+                    <a href="javascript:void(0)">www.petpick.com</a>
+                    <span>|</span>
+                    All rights reserved.
+                </div>
+            </footer><!--footer close-->
+		</div><!--wrapper close-->
+        
+        <!--- Login Modal Begins ---->
+           <div class='modal' ng-show='visible'>
+            <div class='modal-overlay' ng-click='show()'></div>
+               <div class='modal-dialog' ng-style='dialogStyle'>
+                  <div class='modal-close' ng-click='show()'>X</div>
+                      <div class='modal-dialog-content'>
+
+                        <div id="model">
+                        
+                            <div class="loginContainer" >
+                                <form >
+                                    <div class="loginIn" ng-show="loginVisible">
+                                        <div class="formHead"><p class="loginFormHead">Login</p></div>
+                                        <div class="formCol">
+                                            <label class="textLabel" for="username">Username:</label>
+                                            <div class="formInputRow"><input type="text" class="form-control" id="username" ng-model='user.username'/></div>
+
+                                        </div>
+                                        <div class="formCol">
+                                            <label class="textLabel" for="password">Password:</label>
+                                             <div class="formInputRow"><input type="password" class="form-control" id="password" ng-model='user.password'/></div>
+                                        </div>
+
+                                        <div class="formButton">
+                                             <button type="submit" class="formSubmit" ng-click='login(user)'>Submit</button>
+                                             <p class="formCaution"><a href="#">Forget Password</a></p>
+                                             <p class="formCaution formSignUp" ng-click="signUpShow()"><a href="#" >Sign Up</a></p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="signUp" ng-show="!loginVisible">
+                                        <div class="signUpCommonData">
+                                            <div><p class="loginFormHead" >Sign Up</p></div>
+                                            <div class="formCol">
+                                                <label class="textLabel" for="fullname">FullName:</label>
+                                                <div class="formInputRow"><input type="text" class="form-control" id="fullname" ng-model="firstUser.fullname"/></div>
+                                            </div>
+
+                                            <div class="formGenderField">
+                                                <label class="textLabel">Gender:</label>&nbsp;
+                                                 <div class="selectGender">
+                                                    <input type="radio" name="gender" ng-model="firstUser.gender" value="female"></input>
+                                                    <label class="textLabel">Female</label></br>
+                                                    <input type="radio" name="gender" ng-model="firstUser.gender" value="male"></input>
+                                                    <label class="textLabel">Male</label>
+                                                </div>
+                                            </div>
+                                            <div class="selectUserType">
+                                                <label class="textLabel">Type Of User:</label>
+                                                <select class="typeOfWebUser" ng-model="firstUser.typeOfUser">
+                                                    <option value="none" selected>Select</option>
+                                                    <option value="dealer">Dealer</option>
+                                                    <option value="normaluser">Normal User</option>
+                                                    <option value="admin">Admin</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="dealerSpecData">
+                                            <div class="formCol">
+                                                <label class="textLabel" for="phonenumber">Phno:</label>
+                                                <div class="formInputRow"><input type="text" class="form-control" id="phonenumber" ng-model="firstUser.phno"/></div>
+                                             </div>
+                                            <div class="formCol">
+                                                <label class="textLabel">E-mail:</label>
+                                                <div class="formInputRow"><input type="text" class="form-control" id="email" ng-model="firstUser.email"/></div>
+                                            </div>
+                                            <div class="formCol">
+                                                <label class="textLabel">Password:</label>
+                                                <div class="formInputRow"><input type="password" class="form-control" id="password" ng-model="firstUser.password"/></div>
+                                            </div>
+
+                                            <div class="formCol">
+                                                <label class="textLabel">Re-Password:</label>
+                                                <div class="formInputRow"><input type="password" class="form-control" ng-model="firstUser.rePassword"/></div>
+                                            </div>
+
+                                            <div class="formSubmitFloat">
+                                                <button type="submit" class="formSubmit" ng-click='register(firstUser)'>Submit</button>
+                                                <button type="reset" class="formSubmit">clear</button>
+                                            </div>
+<!--
+                                            <div class="formButton formSubmitFloat">
+                                                <button type="reset" class="formSubmit">clear</button>
+                                            </div>
+-->
+                                            
+
+
+                                        </div>
+                                        <div class="userSpecData">
+                                            <div class="formCol">
+                                                <label class="textLabel">Address:</label>
+                                                <div class="formTextField">
+                                                    <div class="formInputRow"><textarea rows="5" cols="20" class="form-control" ng-model="firstUser.address"></textarea>                                                         </div>
+                                                </div>
+                                            </div>
+                                            <div class="formCol">
+                                                <label class="textLabel">ID proof:</label>
+                                                <div class="formInputRow"><input type="text" class="form-control" ng-model="firstUser.idproof"/></div>
+                                            </div>
+                                            <div class="formCol">
+                                                <label class="textLabel">Phno:</label>
+                                                <div class="formInputRow"><input type="text" class="form-control" ng-model="firstUser.phno"/></div>
+                                            </div>
+                                            <div class="formCol">
+                                                <label class="textLabel">E-mail:</label>
+                                                <div class="formInputRow"><input type="text" class="form-control" ng-model="firstUser.email"/></div>
+                                            </div>
+                                            <div class="formCol">
+                                                <label class="textLabel">Password:</label>
+                                                <div class="formInputRow"><input type="password" class="form-control" ng-model="firstUser.password"/></div>
+                                            </div>
+                                            <div class="formCol">
+                                                <label class="textLabel">Re-Password:</label>
+                                                <div class="formInputRow"><input type="password" class="form-control" ng-model="firstUser.rePassword"/></div>
+                                            </div>
+                                            <div class="formSubmitFloat">
+                                                <button type="submit" class="formSubmit" ng-click='register(firstUser)'>Submit</button>
+                                                <button type="reset" class="formSubmit">clear</button>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+       <!--- Login Modal Ends --->
+	</body>
+ 
+
+    
+</html>

@@ -1,0 +1,23 @@
+<div class="gridContainer" ng-controller="profileCtrl">
+    <h1>PROFILE</h1>
+    <div class="profile">
+        <div class='row' ng-repeat="data in dealerDetails">
+            <label class='details'>Name:</label><label class='information'>{{data.name}}</label>
+            <label class='details'>Gender:</label><label class='information'>{{data.gender}}</label>
+            <label class='details'>Phone:</label><label class='information'>{{data.phone}}</label>
+            <label class='details'>Address:</label><label class='information'>{{data.address}}</label>
+            <label class='details'>Pan Card:</label><label class='information'>{{data.PanCard}}</label>
+            <label class='details'>City:</label><label class='information'>{{data.City}}</label>
+            <label class='details'>State:</label><label class='information'>{{data.State}}</label>
+            <div class='clear'></div>
+        </div>
+        <a ui-sref="userPage.editProfile"><input type='button' value='Edit Profile'/></a>
+    </div>
+    <div id="profile_Picture">
+        <image src='images/ProfilePicture.gif' alt='Profile Pic'/>
+       
+    </div>
+    <div class='clear'></div>
+</div>
+
+

@@ -1,0 +1,20 @@
+<section>
+       
+              <div class="PerformanceReview gridContainer">
+			         <!--<h1>Performance Review Grid</h1>-->
+                        <div class="dates">
+                            <label for="FromDate">From</label><input type="date"  min="2014-09-08" id="FromDate"/> 
+                            <label for="ToDate">To</label><input type="date" step="7" min="2014-09-08" id="ToDate"/>
+                        </div>
+                      
+                     <div ng-controller="PerformanceController">
+         
+			<div ui-grid="{ data : PerformanceData}" class="grid" ></div>
+        </div>
+                    <div class="PurpleButton"><input type="button" value="View More" name="purplebutton"/></div>
+                        
+                    </div>
+              
+                
+              
+            </section>

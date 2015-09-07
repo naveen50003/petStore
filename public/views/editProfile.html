@@ -1,0 +1,31 @@
+<section class="gridContainer" ng-controller="profileCtrl">
+    <h1>EDIT PROFILE</h1>
+<div class="DashboardView">
+    <div class="profile">
+        <div class='row' ng-repeat="pdata in dealerDetails">
+           <label class='details'>Name:</label>
+           <input type="text "value="{{pdata.name}}"/> 
+            <label class='details'>Gender:</label>
+           <input type="text "value="{{pdata.gender}}"/>
+            <label class='details'>Phone:</label>
+           <input type="text "value="{{pdata.phone}}"/>
+            <label class='details'>Address:</label>
+           <textarea type="text ">{{pdata.address}}</textarea>
+            <label class='details'>PanCard:</label>
+           <input type="text "value="{{pdata.PanCard}}"/>
+            <label class='details'>City:</label>
+           <input type="text "value="{{pdata.City}}"/>
+            <label class='details'>State:</label>
+           <input type="text "value="{{pdata.State}}"/>            
+             <div class='clear'></div>
+        </div>
+    <input type='button' value='Submit'/>
+    </div>
+    <div id="profile_Picture">
+        <image src='images/ProfilePicture.gif' alt=''/>
+        <a href=''>Change Picture</a>
+    </div>
+    <div class='clear'></div>
+</div>
+<div class='clear'></div>            
+</section>

@@ -1,0 +1,271 @@
+textarea,div,a,ul,li,input,label,nav,p{
+margin: 0;
+padding: 0;
+    
+}
+
+
+.clear{
+    clear: both;
+}
+/*styles for dashboard view
+Mobile
+*/
+.manageGrid .formCol label {
+    margin-top: 10px;
+}
+.manageGrid button  {
+     margin-top: 10px;
+}
+#dealer{
+    padding:15px;
+    margin:0 auto;
+    1border: 1px solid #DDDEDF;
+}
+/*ADD PET CSS*/
+ .ManageDetails{
+    1padding:7px;
+    width:50%;
+	margin:0 auto;
+	border:1px solid black;
+}
+.ManageDetails .tableMainHead  {
+    
+    text-align: center;
+    margin-bottom: 10px;
+    color:#fff;
+	background-color:#044a63;
+    1text-decoration: underline;
+    text-decoration-color:#5C242C;
+    font-weight: bold;
+    font-size: 1.5625em;
+	height:50px;
+	padding-top:10px;
+	overflow:hidden;
+}
+.ManageDetails .row	{
+margin:0 auto;
+width:96%;
+overflow:hidden;
+1border:1px solid;
+}
+.ManageDetails .col	{
+1border:1px solid;
+width:50%;
+height:50px;
+float:left;
+color:#044a63;
+box-sizing:border-box;
+text-align:center;
+margin-top:20px;
+}
+.ManageDetails .colText  input[type="text"],.ManageDetails .colText  textarea,.ManageDetails .colText input[type="file"]	{
+1margin-left:17%;
+width:75%;
+}
+#DealerWrapper{
+    background-color:white;
+    1border: 1px solid ##e6e9eb;
+}
+
+#DealerWrapper .DashboardView{
+    padding:7px 30px;
+    width:76%;
+    1overflow: hidden;
+    margin:0 auto;
+}
+#DealerWrapper .DashboardView input{
+    float: left;
+    clear: right;
+    margin-top:5px;
+    padding:4px;
+  }
+.DashboardView .ManageDetails .row select{
+    color:#676767;
+    height:25px;
+    width:40%;
+    margin-top:8px;
+}
+#DealerWrapper .DashboardView textarea{
+    float: left;
+    color:#676767;
+    clear: right;
+    padding:4px;
+ }
+#DealerWrapper .profile input[type="button"],#DealerWrapper .ManageDetails input[type="button"]{
+    background-color:#6e2d36;
+    padding:10px 15px;
+    margin:10px 0 0 8px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.7em;
+}
+#DealerWrapper .profile label,.ManageDetails label{
+    
+    color:#676767;
+    font-weight:600;
+    font-size:0.8em;
+    border:0;
+    background-color: transparent;
+  }
+
+
+#DealerWrapper .row .details{
+    float: left;
+    clear: left;
+    padding:10px;
+    1border: 1px solid;
+    width: 30%;
+}  
+#DealerWrapper .row .information{
+    float: left;
+    padding:10px;
+    1clear: right;
+    1border: 1px solid;
+    width: 30%;
+    word-break: break-all;
+}     
+@media (min-width:275px) and (max-width:767px) {
+    .ManageDetails .colText  input[type="text"],.ManageDetails .colText  textarea,.ManageDetails .colText input[type="file"]	{
+		margin-left:17%;
+		width:75%;
+		}
+    .ManageDetails .tableMainHead {
+		font-size: 1.125em;
+		padding-top:0;
+		}
+    .ManageDetails .tableMainHead  p{
+		margin-top:10px;
+		}
+     .ManageDetails	{
+		 width:98%;
+		 }
+    .ManageDetails .row	{
+		 width:80%;
+		 }
+	 #DealerWrapper .DashboardView{
+        1padding:7px 30px;
+         padding:0;
+        width:100%;
+        1overflow: hidden;
+        margin:0 auto;
+    }
+	 
+#DealerWrapper .LeftNav, #DealerWrapper #profile_Picture{
+        display: none; 
+        float: none;
+    }
+    
+#DealerWrapper .DashboardView{
+     float: none;
+    }
+    
+#DealerWrapper #profile_Picture a{
+        display: none;
+    }
+.container #pic img,.container #pic label{
+        display: block;
+        width:50px;
+        padding-left: 5px;
+        float: left;
+        color:white;
+ }
+.container #pic label{
+    margin-top: 15px;
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+.DealerMenuList{
+    float: right;
+     margin-top: 15px;
+    font-size: 0.8em;
+    }
+    
+#pic{
+overflow: hidden;
+    padding:10px;
+    width:150px;
+}
+}
+
+/*styles for dashboard view
+Desktop and tablet
+*/
+@media  (min-width:768px) {
+.dealerNav	{
+		display:none;
+        overflow:hidden;
+}
+    
+#dealer{
+    background-color: white;
+    1height:346px;
+    }
+ 
+#menu img,#pic img,#pic label,#pic a{
+	display:none;
+}
+
+#DealerWrapper .LeftNav{
+    background-color:#044A65;
+    float: left;
+    width: 16%;
+}
+
+#DealerWrapper .LeftNav ul li{
+    list-style-type:none;
+    display: block;
+    }
+
+#DealerWrapper .LeftNav ul li a{
+    color:white;
+    padding:20px 10px;
+    display: block;
+    text-decoration: none;
+    font-size:0.8em;  
+}
+
+#DealerWrapper .LeftNav ul li:last-child{
+    margin-bottom: 40px;
+}
+
+#DealerWrapper .LeftNav ul li a:hover,active{
+    background-color: #126687;
+    text-decoration: none;
+    font-size:0.8em;
+  }
+
+#DealerWrapper .DashboardView{
+    float: left;
+    1border: 1px solid;  
+}
+
+/*View Profile Styles*/
+#DealerWrapper #profile_Picture{
+    float: right;
+     width: 27%;
+    1border: 1px solid black;
+    text-align: center;
+}
+#DealerWrapper #profile_Picture a{
+    color:#0075A2;
+    font-size:0.8em;
+    text-decoration:none;
+
+}
+#DealerWrapper .profile{
+    float: left;
+    width: 72%;
+    margin:0 auto;
+    1text-align: left;
+    1border: 1px solid black;
+ }
+
+    
+}
+
+@media  (min-width:768px) and (max-width:900px) {
+ .ManageDetails	{
+     width:84%;
+ }
+}

@@ -1,0 +1,205 @@
+/* Golbal CSS */
+*,a,img,p,span,h1,h2,div{
+	margin:0;
+   padding:0;
+}
+.clear{
+	float:none;
+	clear:both;
+}
+
+body
+{
+	font:normal 100% Arial;
+	font-family: 'Titillium Web', sans-serif;
+	/*background-color: #EEEEEE;*/
+}
+img { 
+max-width: 100%; 
+height: auto; 
+width: auto\9; /* ie8 */ 
+}
+
+a,a:hover {
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+div {
+    display: block;
+}
+ .loginContainer {
+     width:100%;
+     margin:0 auto;
+     overflow:hidden;
+ }
+ .textLabel {
+     color:#596063;
+
+ }
+
+.form-control {
+    display: block;
+    width: 87%;
+/*        height: 12px;*/
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: white;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+.formSubmit {
+    color: #333;
+    background-color:#5c242c;
+    border-color: #CCC;
+    color:#fff;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    margin-right:10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor:pointer;
+    -webkit-appearance: button;
+    border-radius:0px;
+    margin-bottom:15px; 
+    font-weight: bold;
+}
+.formCol {
+/*    margin-bottom: 15px;*/
+    width: 74%;
+    margin: 15px auto;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.formCaution {
+    margin-bottom: 10px;
+}
+.formCaution a  {
+    color:#596063;
+}
+.formSubmitFloat {
+    1float:left;
+/*
+    margin-right: 20px;
+    margin-top:0;
+	margin-bottom:0;
+*/
+    width:42%;
+  
+    margin: 0 auto;
+    
+}
+.dealerSpecData {
+   overflow: hidden;
+    display: none;
+}
+.userSpecData {
+    display: none;
+}
+/*
+.signUp {
+    display:none;
+}
+*/
+.displayBlock {
+     display: block;
+}
+.loginFormHead  {
+    border: 1px solid black;
+    padding:8px;
+    background-color: #044a63;
+    color:#fff;
+    font-weight: bold;
+    margin-bottom:23px; 
+    width: 100%;
+    text-align:center;
+}
+.formGenderField,.selectUserType,.formButton   {
+    margin-bottom: 15px;
+    width: 74%;
+    margin: 15px auto;
+}
+.modal-overlay
+{
+   position: absolute;
+   z-index:9999;
+   left:0;
+   top:0;
+   background-color: #000000;
+   width: 100%;
+   height: 1311px;
+   opacity: 0.7;
+
+}
+.modal-dialog
+{
+    z-index:10000;
+    position: absolute;
+    width:50%;
+    padding-bottom: 20px;
+    top:50%;
+    left:50%;
+    margin:0 auto;
+/*    border:1px solid red;*/
+    /*margin: 0 auto;*/
+    background-color: #fff;
+/*		height: 100%;*/
+    transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+    box-shadow: 4px 4px 80px #000;
+    padding-top:10px;
+    border-radius: 20px;
+
+}
+.modal-close
+{
+
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 120%;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'arial', 'sans-serif';
+  1border: 1px solid black;
+}
+.modal-dialog-content
+{
+  margin-top:30px;
+  1margin-left: 40px;
+/*  border:1px solid red;*/
+/*       margin:50px auto;*/
+  text-align: left;
+  font-size: 20px;
+  1border: 1px solid black;
+
+}
+@media (max-width:480px) 
+{
+  .modal-dialog
+    {
+        position: absolute;
+        top:50%;
+        left:50%;
+/*        border:1px solid black;*/
+        width:100%;
+    }
+}
+

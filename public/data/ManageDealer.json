@@ -1,0 +1,41 @@
+{	
+    "message":"Success",
+    "dealers":[
+			{
+				"dealerName": "Manasa",
+				"contact" : "9848022338",
+				"email": "nlmanasa12@gmail.com"
+           		 },
+			{
+				"dealerName": "KIranmai",
+				"contact" : "9878022338",
+				"email": "kiran12@gmail.com"
+			},
+          		  {
+				"dealerName": "Charitha",
+				"contact" : "8848022338",
+				"email": "nlmanasa12@gmail.com"
+          		  },
+			{
+				"dealerName": "Mukku",
+				"contact" : "9878022338",
+				"email": "mukku@gmail.com"
+			},
+           		 {
+				"dealerName": "Divya",
+				"contact" : "9848021138",
+				"email": "nlmanasa12@gmail.com"
+           		 },
+			{
+				"dealerName": "Manisha",
+				"contact" : "8871111112",
+				"email": "kiran12@gmail.com"
+			},
+			{
+				"dealerName": "Manisha",
+				"contact" : "8871111112",
+				"email": "kiran12@gmail.com"
+			}
+		
+]	
+	}

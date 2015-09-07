@@ -1,0 +1,14 @@
+/*desktop css*/
+@media (min-width:901px){
+    .container{
+        max-width: 1024px;
+        margin:0 auto;
+    }
+    #importantItem,#importantItem{
+        padding:2% ;
+        margin:0 auto;
+    }
+    #menu li .hide1 {
+        display: none;
+    }
+}

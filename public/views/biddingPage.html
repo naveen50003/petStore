@@ -1,0 +1,53 @@
+<section ng-controller="mainController">
+   <div class="bidding">
+           <h2><span>Mr.Navneeth</span> Welcome to Live Auction</h2>
+           <div class="biddingonpets">
+                   <div class="petfullInfo">
+                           <div class="biddingImages">
+                                <img src="images/pugg.jpg" alt="pug">
+                           </div>
+                           <div class="petDescription">
+                                   <p>Description</p>
+                                    <ul>
+                                        <li><span>Animal</span>:<span>Dog</span></li>
+                                        <li><span>Breed</span>:<span>Jerman Shepard</span></li>
+                                      <li>Dealer:<span>Mr.Dhoni</span></li>
+                                      <li>Contact:<span>1234567895</span></li>
+                                    </ul>
+                           </div>
+                    </div>
+                   <div class="currentbiddingrate">
+                            <p>Current Bidding Rate by <span>Mrs.Priya</span> is:<span>$30</span></p>
+                            <label>Enter the Amount you want to bid</label>
+                            <div class="bidinput">
+                   <input type="text" name="amount" placeholder="Enter Amount" id="amounttoEnter" onblur="checkTextField(this);"/>
+                            <input type="submit" value="Enter Amount" ng-click="show()"/>
+                            <div id="errmsg"></div>
+                            </div>
+                    </div>
+                  <div class="clear"></div>
+             <!-- <div class='ng-modal' ng-show='visible'>
+                     <div class='ng-modal-overlay' ng-click='show()'></div>
+                           <div class='ng-modal-dialog' ng-style='dialogStyle'>
+                              <div class='ng-modal-close' ng-click='show()'>X</div>
+                                  <div class='ng-modal-dialog-content'>
+                                     <p>Are you sure you want to submit</p>
+                                      <input type="button" value="yes" name="ok" ng-click="show()"/>
+                                      <input type="button" value="no" name="ok" ng-click="show()"/>
+                                </div>
+                        </div>
+                </div>-->
+              <!--  <div class='ng-modal1' ng-show='visible'>
+                     <div class='ng-modal-overlay1' ng-click='show()'></div>
+                           <div class='ng-modal-dialog1' ng-style='dialogStyle'>
+                              <div class='ng-modal-close1' ng-click='show()'>X</div>
+                                  <div class='ng-modal-dialog-content1'>
+                                     <p>Enter Amount</p>
+                                      <input type="button" value="ok" name="ok" ng-click="show()"/>
+
+                                </div>
+                        </div>
+                </div>  -->
+         </div>
+    </div><!--Bidding View-->
+</section>

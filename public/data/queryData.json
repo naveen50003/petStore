@@ -1,0 +1,33 @@
+{	
+ "status" : "success",
+"queryGrid_dealers": [
+			{
+				"users": "Manasa",
+				"comment" : "This bullfighter dog is good.Buy it!!"
+            },
+			{
+				"users": "Kiranmai",
+				"comment" : "What does this parrot eat?? Its became weak!!"
+			},
+            {
+				"users": "Charitha",
+				"comment" : "I want to buy a pug when will they be available"
+            },
+			{
+				"users": "Mukku",
+				"comment" : "This site is very interesting i suggested all my friends"
+			},
+            {
+				"users": "Divya",
+				"comment" : "I want different species of fishes"
+            },
+			{
+				"users": "Manisha",
+				"comment" : "The cost of bullfighter is very high compared to others"
+			}
+		
+		]
+	
+	
+	}
+	

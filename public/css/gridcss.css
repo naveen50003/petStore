@@ -1,0 +1,13 @@
+.grid {
+ width:100%;
+ heigth:50%;
+}
+.purplebutton  {
+    background-color: #044A65;
+    color:#fff;
+    border:none;
+    border-radius: 5px;
+    padding:4px;
+    margin-left:7px;
+    margin-right:3px;
+}

@@ -1,0 +1,9 @@
+{			"status" : "success",
+            "petDetails": {
+				"id" : 1,
+                "gender": "Male",
+                "age": 2,
+                "color": "Brown",
+                "availLocation": "Hyderabad"
+            }
+}
